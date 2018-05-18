@@ -76,3 +76,6 @@ for i in range(300):
         pass
 #         print(i, np.sum(newWages), np.sum(wages), loss)
 ```
+# What it was:
+
+I was using the wrong code, computing something totally different than

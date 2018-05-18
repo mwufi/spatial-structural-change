@@ -13,6 +13,9 @@ Thursday - 7 hours
 	Added price normalization
 	Focused on rewriting the loop to solve for wages. So that works..
 	L takes longer to converge now...
-
+    
+Friday - 3 hours
+    So far..
+    Bugs in the wage loop. Somehow it explodes now.
 
 Total: 24 hours
