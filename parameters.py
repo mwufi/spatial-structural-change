@@ -19,7 +19,15 @@ def _read_matrix(name):
     """
     read a matrix file, such as ep_wages1880.csv
     """
+    
     myfile = os.path.join(DIR, 'ep_{}.csv'.format(name))
+    if not os.path.exists(myfile):
+        myfile = os.path.join(DIR, '{}.csv'.format(name))
+        
+    if not os.path.exists(myfile):
+        print("{}: {} not found".format(name, myfile))
+        return None
+    
     mat = pd.read_csv(myfile, header=None).values
     print("{}: {}".format(name.rjust(10), mat.shape))
 
